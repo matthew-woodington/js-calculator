@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    font-family: 'M PLUS Rounded 1c', sans-serif;    
+    font-weight: 500;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: lightgrey;
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: #3B3C3C;
+    padding: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.current-opperand {
+    color: #fff;
+    font-size: 3rem;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    font-size: 2rem;
+    background-color: #6A6B6B;
+    border: 1px solid #3B3C3C;
+    color: #fff;
+}
+
+button:active {
+    background-color: #D3D3D3;
+}
+
+
+.top-row {
+    background-color: #4C4D4D;
+}
+
+.top-row:active {
+    background-color: #A5A4A4;
+}
+
+.function {
+    background-color: #F2A33C;
+}
+
+.function:active {
+    background-color: #9a6826;
+}
+
+.large-btn {
+    grid-column: span 2;
+    border-bottom-left-radius: 1rem;
+}
+
+.equal {
+    border-bottom-right-radius: 1rem;
+}
