@@ -39,6 +39,9 @@ body {
 .display-scrn {
     font-size: 4rem;
     color: #fff;
+    background-color: #3B3C3C;
+    width: 100%;
+    text-align: right;
 }
 
 .current-opperand {
