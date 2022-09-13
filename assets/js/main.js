@@ -15,9 +15,9 @@ numberBtn.forEach((button) => {
 });
 
 operatorBtn.forEach((button) => {
-  button.addEventListener("click", function pushOperator() {
+  button.addEventListener("click", function pushOperator(e) {
     // alert(e.target.innerHTML);
-    calculation.push(this.innerText);
+    calculation.push(e.target.innerHTML);
     displayScrn.value = calculation.join("");
   });
 });
