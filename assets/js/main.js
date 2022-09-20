@@ -65,4 +65,8 @@ calculateBtn.addEventListener("click", function calculate() {
   const finalAnswer = answer;
 
   displayScrn.value = finalAnswer;
+
+  calculation = [];
+
+  calculation.push(answer);
 });
