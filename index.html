@@ -10,31 +10,36 @@
     <link rel="stylesheet" href="../js-calculator/assets/css/styles.css">
 </head>
 <body>
-    <article class="calculator">
-        <div class="output">
-            <!-- <div class="display-scrn">0</div> -->
-            <input type="text" class="display-scrn" value="0" disabled>
+    <section class="container">
+        <div class="calculator">
+            <div class="display">
+                <div class="display-1"></div>
+                <div class="display-2"></div>
+                <div class="temp-result"></div>
+            </div>
+            <div class="calc-buttons">
+                <div class="button clear-all top-row">C</div>
+                <div class="button clear-last top-row">CE</div>
+                <div class="button operation top-row">%</div>
+                <div class="button operation">/</div>
+                <div class="button number">7</div>
+                <div class="button number">8</div>
+                <div class="button number">9</div>
+                <div class="button operation">x</div>
+                <div class="button number">4</div>
+                <div class="button number">5</div>
+                <div class="button number">6</div>
+                <div class="button operation">-</div>
+                <div class="button number">1</div>
+                <div class="button number">2</div>
+                <div class="button number">3</div>
+                <div class="button operation">+</div>
+                <div class="button btn-0 number">0</div>
+                <div class="button number dot">.</div>
+                <div class="button calculate">=</div>
+            </div>
         </div>
-        <button class="top-row clear-btn">AC</button>
-        <button class="top-row">±</button>
-        <button class="top-row">%</button>
-        <button class="function operator-btn">/</button>
-        <button class="number-btn">7</button>
-        <button class="number-btn">8</button>
-        <button class="number-btn">9</button>
-        <button class="function operator-btn">*</button>
-        <button class="number-btn">4</button>
-        <button class="number-btn">5</button>
-        <button class="number-btn">6</button>
-        <button class="function operator-btn">-</button>
-        <button class="number-btn">1</button>
-        <button class="number-btn">2</button>
-        <button class="number-btn">3</button>
-        <button class="function operator-btn">+</button>
-        <button class="large-btn number-btn">0</button>
-        <button class="number-btn">.</button>
-        <button class="function equal calc-btn">=</button>
-    </article>
+    </section>
 
     <script src="../js-calculator/assets/js/main.js"></script>
 </body>
